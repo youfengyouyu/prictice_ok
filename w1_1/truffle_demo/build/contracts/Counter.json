@@ -17,15 +17,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[],\"name\":\"count\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/G/prictice/prictice_ok/w1_1/truffle_demo/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/G/prictice/prictice_ok/w1_1/truffle_demo/contracts/Counter.sol\":{\"keccak256\":\"0x34e025ab2f666756474c8dc517cc9dc6538dbed2d8951f572ef2a8186a0445e1\",\"urls\":[\"bzz-raw://635368720cd9f30242e4f28068dc832a06240609ee19a2b9b87d79e51dd3be2d\",\"dweb:/ipfs/QmfW1c6u7WKPSKGPTwixvSeao6mprSRTj1zqFpBCrERdxj\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50600080819055506078806100256000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806306661abd14602d575b600080fd5b60336035565b005b60016000540160008190555056fea265627a7a7231582092611a65f815f1ee5b6ce659a2e711238eb799970e6e3047f699c98ff53aad2064736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806306661abd14602d575b600080fd5b60336035565b005b60016000540160008190555056fea265627a7a7231582092611a65f815f1ee5b6ce659a2e711238eb799970e6e3047f699c98ff53aad2064736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[],\"name\":\"count\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Counter.sol\":{\"keccak256\":\"0x34e025ab2f666756474c8dc517cc9dc6538dbed2d8951f572ef2a8186a0445e1\",\"urls\":[\"bzz-raw://635368720cd9f30242e4f28068dc832a06240609ee19a2b9b87d79e51dd3be2d\",\"dweb:/ipfs/QmfW1c6u7WKPSKGPTwixvSeao6mprSRTj1zqFpBCrERdxj\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50600080819055506078806100256000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806306661abd14602d575b600080fd5b60336035565b005b60016000540160008190555056fea265627a7a72315820f62f89af8c368825e2e9f335faa8ae12fc72029f5c4af28608d3ccd5a265482664736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806306661abd14602d575b600080fd5b60336035565b005b60016000540160008190555056fea265627a7a72315820f62f89af8c368825e2e9f335faa8ae12fc72029f5c4af28608d3ccd5a265482664736f6c63430005100032",
   "sourceMap": "36:171:0:-;;;81:52;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:52:0;124:1;114:7;:11;;;;36:171;;;;;;",
   "deployedSourceMap": "36:171:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:171:0;;;;;;;;;;;;;;;;;;;141:63;;;:::i;:::-;;;195:1;185:7;;:11;175:7;:21;;;;141:63::o",
   "source": "pragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract Counter {\r\n    uint counter;\r\n\r\n    constructor()  public {\r\n        counter = 0;\r\n    }\r\n\r\n    function count() public{\r\n        counter = counter + 1;\r\n    }\r\n}",
-  "sourcePath": "G:/prictice/prictice_ok/w1_1/truffle_demo/contracts/Counter.sol",
+  "sourcePath": "D:\\ok_prictice\\prictice_ok\\w1_1\\truffle_demo\\contracts\\Counter.sol",
   "ast": {
-    "absolutePath": "/G/prictice/prictice_ok/w1_1/truffle_demo/contracts/Counter.sol",
+    "absolutePath": "project:/contracts/Counter.sol",
     "exportedSymbols": {
       "Counter": [
         22
@@ -296,7 +296,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/G/prictice/prictice_ok/w1_1/truffle_demo/contracts/Counter.sol",
+      "absolutePath": "project:/contracts/Counter.sol",
       "exportedSymbols": {
         "Counter": [
           22
@@ -620,9 +620,17 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2022-02-23T07:20:38.163Z",
+  "networks": {
+    "5": {
+      "events": {},
+      "links": {},
+      "address": "0x2Da018c8372CD386993aC75735432Ebda9b37dFe",
+      "transactionHash": "0xc01b5dbaef22fe10779f4290a414faed1f8e5b8ad98bdc18105ff2617268c852"
+    }
+  },
+  "schemaVersion": "3.4.2",
+  "updatedAt": "2022-02-23T13:06:20.791Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
