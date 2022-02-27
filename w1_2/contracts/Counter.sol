@@ -9,5 +9,11 @@ contract Counter {
 
     function count() public{
         counter = counter + 1;
+
+        
+    }
+
+    function add(uint value) public {
+        counter = counter + value;
     }
 }

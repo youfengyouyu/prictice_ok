@@ -5,6 +5,9 @@
 // Runtime Environment's members available in the global scope.
 const hre = require("hardhat");
 
+const { writeAbiAddr } = require('./artifact_save.js');
+
+
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
   // line interface.
@@ -15,11 +18,14 @@ async function main() {
 
   // We get the contract to deploy
   const Counter = await hre.ethers.getContractFactory("Counter");
-  const counter = await Counter.deploy(2);
+  const counter = await Counter.deploy(5);
 
   await counter.deployed();
 
   console.log("counter deployed to:", counter.address);
+
+  let Artifact = await artifacts.readArtifact("Counter");
+  await writeAbiAddr(Artifact, counter.address, "Counter", network.name);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
