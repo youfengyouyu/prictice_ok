@@ -1,0 +1,12 @@
+
+1.创建Score
+https://goerli.etherscan.io/tx/0x1bf4633bf356a0d3a8440c7c6746bb7856082b6f3876e11ab6dce935ed2674fb
+
+2.创建Teacher
+https://goerli.etherscan.io/tx/0x474759f1f53c6dfcfe5d772f5609e60cff8113d08f6a788fd9721d6ab509a5de
+
+3.添加teacher
+https://goerli.etherscan.io/tx/0x26422b2695b8774d8e2ebb6d0061088f06b2e94e4e06f8c0d294945a4fccb552
+
+4.修改分数
+https://goerli.etherscan.io/tx/0xabc3e26d9958b6900354fc4b08029573d201b59da0814edf73891d080228f3f3
